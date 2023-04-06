@@ -1,0 +1,163 @@
+body {
+    min-height: 100vh;
+    background-color: rgb(228, 171, 115) !important;
+}
+
+.navbar {
+    background-color: white;
+    height: 100px;
+}
+
+.quiz-background {
+    background-color: rgba(9, 21, 131, 0.904);
+    width: 15rem;
+    height: 932px;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-background img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.quiz-card {
+    width: 40rem;
+}
+
+.quiz-card img {
+    margin-bottom: 24px;
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    align-items: center;
+    padding-top: 12px;
+}
+
+.quiz-answer:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bg-success,
+.bg-danger {
+    color: white;
+}
+
+
+.quiz-finished {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 48px;    
+    margin-top: 48px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.restartbutton {
+    display: flex;
+    justify-content: center;
+    margin: 24px;
+}
+
+.progress {
+    border-radius: 0px !important;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center !important;
+}
+
+.container-fluid span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.margin {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+
+.question-footer {
+    margin-top: 24px;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 40rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.quiz-card {
+    --bs-card-border-color: none !important;
+}
+
+.questionsansweredright {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+
+
+@media (max-width: 780px) {
+
+    .navbar {
+        display: none !important;
+    }
+
+
+
+    .quiz-header {
+        width: 100% !important;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .container{
+        height: 844px;
+    }
+    .card, .quiz-card  img{
+        height: 350px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        height: 100%;
+        padding: 0!important;
+        margin: 0 !important;
+    }
+
+
+    .quiz-header{
+        height: 20%;
+    }
+
+    .card-body{
+        height: 80%;
+    }
+}
